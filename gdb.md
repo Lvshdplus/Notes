@@ -1,14 +1,17 @@
-# GDB Mannul
+# GDB Manual
 
 This note shows some basic use of GDB(GNU Project Debugger).
 
 ```c++
 /* To use gdb, add '-g' flag when compiling */
 $ g++ -g example.cpp -o main
-
+  
 /* use gdb to run executable file */
 $ gdb ./main
 
+/* visualize the file to debug */
+(gdb) press ctrl+x then press a
+  
 /* run the program */
 (gdb) run (r)
   
@@ -80,5 +83,11 @@ $ gdb ./main
   * inside GDB when running the program
   */
 (gdb) set var {varible name} = {some value}
+
+/** when multiple processes are running (ex: fork), 
+  * let GDB know which process to debug 
+  */
+(gdb) set follow-fork-mode [child | parent]
+  
 ```
 
