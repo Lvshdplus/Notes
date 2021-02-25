@@ -1,2 +1,2 @@
 # notes
-This repo includes notes taken from self-taught class, instructions for some installation or configure and so on. 
+This repository includes notes taken from self-taught books or courses, instructions of installation or configuration, and so on.
